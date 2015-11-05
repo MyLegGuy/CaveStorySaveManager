@@ -1,0 +1,10 @@
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\bin\Debug\CaveStorySaveManager.exe.config
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\bin\Debug\CaveStorySaveManager.exe
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\bin\Debug\CaveStorySaveManager.pdb
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.csprojResolveAssemblyReference.cache
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.Form1.resources
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.Main.resources
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.Properties.Resources.resources
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.csproj.GenerateResource.Cache
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.exe
+D:\Programming\c#\CaveStorySaveManager\CaveStorySaveManager\obj\Debug\CaveStorySaveManager.pdb
