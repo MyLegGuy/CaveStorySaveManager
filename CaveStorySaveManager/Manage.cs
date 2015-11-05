@@ -47,6 +47,14 @@ namespace CaveStorySaveManager
             bw.Close();
             br.Close();
 
+            int happy = 0x00;
+            happy = getSaves(profilefilepath, filenumber, true);
+
+            bw = new BinaryWriter(File.OpenWrite(profilefilepath));
+            bw.BaseStream.Position = 0x1F020;
+            bw.Write(happy);
+            bw.Close();
+
             MessageBox.Show("Done. Save injected into save slot "+filenumber+".");
 
             return;

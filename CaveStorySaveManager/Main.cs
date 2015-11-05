@@ -34,8 +34,12 @@ namespace CaveStorySaveManager
 		
         private void button3_Click(object sender, EventArgs e)
         {
-        	ofd2.ShowDialog();
-
+            ofd2.ShowDialog();
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                MessageBox.Show("You want to inject a save file.....into\nEh, I ran out of stupid things to say.\nYou need to put the save file number you want to inject this sae into.");
+                return;
+            }
             if (Int32.Parse(textBox1.Text) > 3 || int.Parse(textBox1.Text) < 1)
             {
                 MessageBox.Show("You're an idiot. Sorry to break it to you.");
