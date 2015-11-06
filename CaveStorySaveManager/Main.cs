@@ -93,5 +93,10 @@ namespace CaveStorySaveManager
             
 			Manage.ExtractSave(Int32.Parse(textBox1.Text), textBox2.Text, ofd.FileName);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

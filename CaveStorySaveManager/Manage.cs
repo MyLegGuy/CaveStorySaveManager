@@ -13,8 +13,7 @@ namespace CaveStorySaveManager
         
     	public static void injectSave(string profilefilepath, string injectfilepath, int filenumber)
     	{
-            BinaryReader br = new BinaryReader(File.OpenRead(injectfilepath));
-            BinaryWriter bw = new BinaryWriter(File.OpenWrite(profilefilepath));
+
 
             int happyint = 0x0;
             int angryint = 0x1;
@@ -38,10 +37,26 @@ namespace CaveStorySaveManager
                     return;
             }
 
+            BinaryWriter bw2 = new BinaryWriter(File.OpenWrite(profilefilepath));
+            bw2.BaseStream.Position = happyint;
+            System.Diagnostics.Debug.WriteLine(angryint);
+            System.Diagnostics.Debug.WriteLine(happyint);
+            for (int i = happyint; i < angryint; i++)
+            {
+                bw2.BaseStream.Position = i;
+                bw2.Write(0x00);
+            }
+
+            bw2.Close();
+
+            BinaryReader br = new BinaryReader(File.OpenRead(injectfilepath));
+            BinaryWriter bw = new BinaryWriter(File.OpenWrite(profilefilepath));
+
             br.BaseStream.Position = 0x0;
             bw.BaseStream.Position = happyint;
             for (int i = happyint; i < angryint; i++)
             {
+                bw.BaseStream.Position = i;
                 bw.Write(br.ReadByte());
             }
             bw.Close();
